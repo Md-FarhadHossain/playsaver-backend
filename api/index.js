@@ -104,6 +104,7 @@ app.get('/api', (req, res) => {
     res.json({ message: 'Time Server API is running.' });
 });
 
+
 // Start server for local testing, but export for Vercel Serverless
 if (process.env.NODE_ENV !== 'production') {
     const PORT = process.env.PORT || 3000;
